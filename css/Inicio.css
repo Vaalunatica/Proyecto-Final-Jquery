@@ -1,0 +1,768 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output,section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+
+body {
+line-height: 1;
+}
+
+ol, ul {
+list-style: none;
+}
+
+blockquote, q {
+quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/*====================universal pseudo-elements, *:before and *:after,to select every imaginable element and change the box-sizing to border-box.========================= */
+
+*,
+*:before,
+*:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+
+}  
+
+/*======================================== Contenedores ========================================*/
+
+.container{
+padding-left: 15px;
+padding-right: 15px;
+} 
+
+.container,
+.multicontainer {
+margin: 0 auto;
+width: 1080px;
+}
+
+/* Podemos usar esta clase de contenedor en diferentes elementos para establecer un width común*/
+
+.multicontainer{
+padding-left: 15px;
+padding-right: 15px;
+
+} 
+
+/* ==========Clearfix  "Containing Floats "this basically ensures that when applying float to elements, if we apply this class to the parent container element of that floated element, this clearfix will ensure the flow of the document after and before it wont be affected by the float==================*/
+
+.clearfix:before,
+.clearfix:after {
+content: "";
+display: table;
+}
+
+.clearfix:after {
+clear: both;
+}
+
+.clearfix {
+clear: both;
+*zoom: 1;
+}
+
+
+/*========= TIPOGRAFÍA ==============*/
+
+h1 {
+
+color: #000000;
+margin: 36px 30% 10px 30%; 
+text-align: center;
+font-family: century gothic;
+font-size: 30px;
+line-height: 44px
+font-size: 50px;
+}
+
+h2 {
+
+font-family: century gothic, regular;
+font-size: 30px;
+line-height: 25px;
+font-weight: 800;
+color: #808080;
+text-align: center;
+}
+
+h3 {
+
+font-family: century gothic;
+font-size: 30px;
+line-height: 35px;
+font-weight: 800;
+color: #cccccc;
+text-align: center;
+margin-bottom: 20px;
+}
+
+h4 {
+
+font-family: century gothic, regular;
+font-size: 20px;
+line-height: 25px;
+font-weight: 800;
+color: #808080;
+text-align: center;
+}
+
+
+p{
+
+margin-bottom: 16px;
+font-size: 20px;
+margin-top: 20px;
+color: #808080;
+font-family: century gothic, regular;
+line-height: 27px;
+text-align: justify;
+}
+
+td, th {
+
+margin-bottom: 16px;
+font-size: 20px;
+margin-top: 20px;
+color: #808080;
+font-family: century gothic, regular;
+line-height: 27px;
+text-align: justify;
+}
+
+label {
+
+margin-bottom: 16px;
+font-size: 20px;
+margin-top: 20px;
+color: #808080;
+font-family: century gothic, regular;
+line-height: 27px;
+text-align: justify;
+}
+
+
+/*============================= <a> Links =============================*/
+
+a {
+
+color: #000000;
+text-decoration: none;
+}
+
+a:hover {
+
+color: #a9b2b9;
+}
+
+p a {
+
+border-bottom: 1px solid #000000;
+}
+
+.primary-header a {
+
+color: #fff;
+
+}
+
+.primary-footer a:hoover {
+
+color: #000000;
+}
+
+
+/*======================================== Primary header ========================================*/
+
+
+.carritoimage{
+  position: relative;
+  float: right;
+  z-index: 10;
+  padding-right: 30px;
+  cursor:pointer;
+}
+
+
+.divNavBanner {
+
+background-color: #000000;
+height: 40px;
+position: relative;
+}
+
+.primary-nav {
+font-size: 14px;
+font-weight: 400;
+letter-spacing: .5px;
+text-transform: uppercase;
+float: right;
+}
+
+.primary-nav ul {
+position: relative;
+top: 15px;
+right: 23px;
+}
+
+
+/*================================== MENÚ NAVEGADOR ==================================*/
+
+.navigation ul {
+
+font-size: 12px;
+font-family: century gothic, regular;
+margin: 0;
+padding: 0;
+text-transform: uppercase;
+
+}
+
+.navigation li {
+display: inline-block;
+}
+
+.navigation a {
+color: #ffff;
+padding: 12px 20px;
+text-decoration: none; /*Elimina elementos extra de elementos <a> como el interlineado*/
+}
+
+.navigation a:hover { /*Cambia el navegador al color blanco al posicionarse en él*/
+background: #ffffff;
+color: #000000;
+font-weight:  800;
+} 
+
+/*======================================== HEADER ========================================*/
+
+.headerInicio{
+  padding: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: auto;
+  max-width:100%;
+}
+
+.headerArtista {
+  padding: 0;
+  margin-top: 50px;
+  margin-bottom: 125px;
+  height: auto;
+  max-width:100%;
+}
+
+/*======================================== SOCIAL ========================================*/
+
+/*Barra de redes sociales*/
+
+.social {
+position: fixed; /* fija para que siempre se muestre en pantalla*/
+left: 0; /* Establecemos la barra en la izquierda */
+top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+z-index: 20; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+.social ul {
+list-style: none;
+}
+
+.social ul li a {
+display: inline-grid;
+background: #000;
+padding: 10px;
+text-decoration: none;
+-webkit-transition:all 500ms ease;
+-o-transition:all 500ms ease;
+transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+}
+
+.social ul li .icon-facebook {background:#000000;} /* Establecemos los colores de cada red social, aprovechando su class */
+.social ul li .icon-instagram {background: #000000;}
+.social ul li .icon-behance {background: #000000;}
+
+
+.social ul li a:hover {
+background: #000000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+padding: 10px 20px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+}
+
+/*======================================== INFORMACIÓN ARTISTA ========================================*/
+
+.infoartista{
+
+  width: 700px;
+  margin-left: 150px;
+
+}
+/*======================================== SLIDER ========================================*/
+
+
+.slider { 
+
+overflow: hidden; 
+zoom: 1; 
+position: relative; 
+}
+
+
+.slider a{ 
+
+text-decoration: none; 
+outline: none; 
+border: none; }
+
+
+.cs-buttons a { 
+
+margin-left: 5px; 
+margin-top: 30px;
+height: 10px; 
+width: 10px; float: left; 
+border: 1px solid #604200; 
+color:#604200; 
+text-indent: -1000px; }
+
+
+.cs-prev, 
+.cs-next { /*Botones de next y previa*/
+
+background-color: #000000; 
+font-family: century gothic, regular;
+color: #ffffff; 
+padding: 0px 10px; }
+
+
+/*======================================== ANIMACIÓN ========================================*/
+
+.animacion{
+  
+  position: relative;
+  margin:auto;
+  margin-top:80px;
+  margin-bottom: 50PX;
+  width:100px;
+  height:100px;
+  
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+   
+}
+
+.circle{
+  
+  background-color:#f2f2f2;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  
+}
+
+.square{
+  
+  position: absolute;
+  background-color:#f2f2f2;
+  width:100px;
+  height:100px;
+  
+}
+
+.horizontal{
+  position: absolute;
+  left:-50px;
+  -webkit-animation: horizontal 3s linear infinite;
+  animation: horizontal 3s linear infinite;
+  -webkit-animation-delay:1s;
+  animation-delay:1s;
+  
+}
+
+@-webkit-keyframes horizontal {
+     0%   {transform: translate(0px,0px);}
+     20%  {transform: translate(100px,0px);}
+     40%  {transform: translate(100px,0px);}
+     60%  {transform: translate(0px,0px);}
+     80%  {transform: translate(0px,0px);}
+    100%  {transform: translate(0px,0px);}
+}
+@keyframes horizontal {
+     0%   {transform: translate(0px,0px);}
+     20%  {transform: translate(100px,0px);}
+     40%  {transform: translate(100px,0px);}
+     60%  {transform: translate(0px,0px);}
+     80%  {transform: translate(0px,0px);}
+    100%  {transform: translate(0px,0px);}
+}
+
+
+.vertical{
+  
+  position: absolute;
+  top:-50px;
+  -webkit-animation: vertical 3s linear infinite;
+  animation: vertical 3s linear infinite;
+  -webkit-animation-delay:1s;
+  animation-delay:1s;
+  
+}
+
+@-webkit-keyframes vertical {
+     0%   {transform: translate(0px,0px);}
+     20%  {transform: translate(0px,0px);}
+     40%  {transform: translate(0px,100px);}
+     60%  {transform: translate(0px,100px);}
+     80%  {transform: translate(0px,0px);}
+     100% {transform: translate(0px,0px);}
+}
+@keyframes vertical {
+     0%   {transform: translate(0px,0px);}
+     20%  {transform: translate(0px,0px);}
+     40%  {transform: translate(0px,100px);}
+     60%  {transform: translate(0px,100px);}
+     80%  {transform: translate(0px,0px);}
+     100% {transform: translate(0px,0px);}
+}
+
+
+/*======================================== BOTON ========================================*/
+
+.botontienda{
+position: relative;
+text-align: center;
+margin-top: 15px;
+text-decoration: none;
+padding: 5px;
+font-family: century gothic, bold;
+}
+
+.fondonegro {
+  background-color: #000000;
+  color: #000000;
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+
+/*======================================== TIENDA ========================================*/
+
+  
+.uppr {
+  text-transform: uppercase;
+}
+h3.uppr {
+
+  border-bottom: 1px solid #4f4bd3;
+}
+
+ .tiendaproductos {
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+ }
+ main > .tiendaproductos {
+  margin-top: 16px;
+}
+ .clear,
+ .full::after, .tiendaproductos::after {
+  content: "";
+  display: table;
+  clear: both; 
+ }
+ .grid {
+  box-sizing: border-box;
+  float: left;
+ }
+
+  .grid-two {
+    top: 100px;
+  width: 40%;
+
+ }
+
+ .grid-three {
+  width: 33.333%; 
+ }
+
+ .full {
+  width: 100%;
+  box-sizing: border-box;
+  margin:  auto ;
+  margin-left: 290px;
+ }
+
+  .fulltienda {
+  width: 100%;
+  box-sizing: border-box;
+  margin:  auto ;
+
+ }
+
+ a {
+  text-decoration: none;
+ }
+
+ .box {
+  box-sizing: border-box;
+  padding: 8px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, .1),-1px -1px 4px rgba(0, 0, 0, .1);
+  border-radius: 5px;
+
+
+ }
+ .box h3 {
+  margin: 4px;
+ }
+
+ .grid > .box {
+  width: 95%;
+  margin: 0 auto;
+
+ }
+
+ .product {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 8px !important;
+  margin-bottom: 30px !important;
+
+ }
+
+ .product > img {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid rgba(30,30,30,.12);
+  padding: 8px;
+  box-sizing: border-box;
+  height: 300px;
+  width: auto;
+ }
+
+ .product h4 {
+  margin-top: 4px;
+ }
+
+ .detail {
+  margin-top: 80px;
+  margin-right: 40px;;
+  text-align: center;
+  background-color: #efefef;
+  padding: 10px;
+
+
+ }
+ #demo-img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 4px solid #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+ }
+ .button {
+  border: 0 none;
+  outline: 0 none;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 16px;
+  padding: 4px 8px;
+  opacity: .92;
+  cursor: pointer;
+  color: #ffffff;
+ }
+ .button:hover {
+  opacity: .96;
+ }
+ .button:active {
+  opacity: 1;
+ }
+ #price {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 16px;
+ }
+
+ .green {
+  background-color: #00b9c2;
+   font-family: century gothic;
+ }
+
+ .grid-three > h1 {
+  text-align: center;
+ }
+ form * {
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, .15);
+  width: 100%;
+  margin: 8px 0;
+  padding: 4px 8px;
+  border-radius: 4px;
+ }
+
+ /*======================================== PAGO ========================================*/
+
+#p1{
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+
+}
+
+.carrito {
+
+  width: 50%;
+}
+
+
+/*======================================== 404 ========================================*/
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#notfound {
+  position: relative;
+  height: 100vh;
+}
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.notfound {
+  max-width: 520px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.notfound .notfound-404 {
+  position: relative;
+  height: 240px;
+}
+
+.notfound .notfound-404 h1 {
+font-family: century gothic, regular;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 252px;
+  font-weight: 900;
+  margin: 0px;
+  color: #262626;
+  text-transform: uppercase;
+  letter-spacing: -40px;
+  margin-left: -20px;
+}
+
+.notfound .notfound-404 h1>span {
+  text-shadow: -8px 0px 0px #fff;
+}
+
+.notfound .notfound-404 h3 {
+  font-family: century gothic, regular;
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #262626;
+  margin: 0px;
+  letter-spacing: 3px;
+  padding-left: 6px;
+}
+
+.notfound h2 {
+  font-family: century gothic, regular;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+  .notfound .notfound-404 {
+    height: 200px;
+  }
+  .notfound .notfound-404 h1 {
+    font-size: 200px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .notfound .notfound-404 {
+    height: 162px;
+  }
+  .notfound .notfound-404 h1 {
+    font-size: 162px;
+    height: 150px;
+    line-height: 162px;
+  }
+  .notfound h2 {
+    font-size: 16px;
+  }
+
